@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    }
+
+.container{
+        max-width: 1180px;
+        margin-inline: auto;
+        padding-left: 15px;
+        padding-right: 10px;
+        overflow: hidden;
+        
+    }
+.flex {
+        display: flex;
+        align-items: center;
+    }
+    
+    
+nav{
+    background-color: rgb(91, 110, 229);
+}
+.main-nav{
+    justify-content: space-between;
+    position: relative;
+
+
+}
+
+ .logo {
+    color: #fff;
+    font-size:35px; 
+   
+    font-weight: 600;
+   
+}
+.logo span{
+    color: crimson;
+}
+
+
+.company-logo img{
+    width: 200px;
+
+}
+.nav-links{
+flex-basis: 730px;
+
+}
+.nav-links ul{
+    list-style: none;
+    justify-content:end;
+    gap: 40px;
+    flex-direction: row;
+    
+}
+.nav-toggle{
+    display: none;
+}
+.nav-links ul a{
+    color: #fff;
+}
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+.search{
+    background-image: #url(istockphoto-511990814-612x612.jpg);
+}
+.search h2{
+    position: absolute;
+    top: 25%;
+    left:40%;
+}
+.search-box{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    height: 100px;
+
+}
+.search-text{
+    height: 40px;
+    width: 700px;
+}
+.search-btn{
+    height: 60px;
+}
