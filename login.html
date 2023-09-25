@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  
+
+  </head>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Poppins: wght@200; 400; 700&display=swap");
+    * {
+    padding: 0%;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+    #container {
+      display: flex;
+    }
+
+    form {
+      width: 10%;
+    }
+    #searchbar{
+      display:none
+    }
+    #fin{
+      justify-items: center;
+      justify-content: center;
+      margin-left: 60%;
+    }
+    /* Navbar */
+    #hup>div:nth-child(2)>p{
+    font-size: 20px;
+    font-weight: 600;
+}
+#hup{
+    display: flex;
+    justify-content: space-around;
+    gap: 25%;
+    height: 70px;
+    /* margin-bottom: 20px; */
+    background-color: #201f1e;
+    color: azure;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+}
+#hup>div>p{
+    margin-top: 1%;
+    margin-left: 5px;
+    color: azure;
+}
+#hup>div:nth-child(2){
+    display: flex;
+    justify-content: space-evenly;
+    width: 35%;
+    border: 0px solid rebeccapurple;
+    color: black;
+}
+#hup>div>img{
+    width: 260px;
+height: 250px;
+margin-top: 10px;
+margin-left: -60px;
+transition: all 0.2s ease-in 0s;
+
+}
+#hup>div>img:hover{
+    width: 270px;
+height: 260px;
+
+cursor: pointer;
+}
+#container{
+  margin-top: 13%;
+  margin-left: 2%;
+}
+  </style>
+
+  <body>
+    
+    <div id="hup">
+      <div>
+          <img id="home" src="File_000.png" alt="">
+      </div>
+      <div>
+           <p><a style="text-decoration: none;color: azure;" href="./home.html">Home</a></p>
+
+          <p><a style="text-decoration: none;color: azure;" href="./Blog(Nitin Jambal)/topheader.html">Blog</a></p>
+          <p><a href="RegisterAsProfessional(DeepakSharma)/city.html" style="color:white">Register As A Professional</a></p>
+          <p id="change"></p>
+          <p id="logout"></p>
+      </div>
+    </div>
+    <div id="container">
+      <div id="register-form">
+        <h1>Register</h1>
+        <form id="reg_form">
+          <input type="text" id="name" placeholder="Name" />
+          <input type="text" id="email" placeholder="Email" />
+          <input type="text" id="username" placeholder="Username" />
+
+          <input type="text" id="password" placeholder="Password" />
+          <input type="text" id="mobile" placeholder="Mobile" />
+          <input type="text" id="description" placeholder="Description" />
+        </form>
+
+        <button id='rg' >Register</button>
+      </div>
+
+      <div id="login-form">
+        <h1>Login</h1>
+        <form>
+          <input type="text" id="login-username" placeholder="Username" />
+
+          <input type="text" id="login-password" placeholder="Password" />
+        </form>
+
+        <button id='lg' >Login</button>
+      </div>
+    </div>
+  </body>
+</html>
+<script type='module' src="auth.js"></script>
